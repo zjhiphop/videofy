@@ -12,7 +12,7 @@ Why?
 ![Source File](https://github.com/zjhiphop/videofy/raw/master/tmp/test.gif)
 > Source file 627KB
 
-![Video MP4 File](https://github.com/zjhiphop/videofy/raw/master/tmp/test.gif)
+![Video MP4 File](https://github.com/zjhiphop/videofy/raw/master/tmp/test-mp4.mp4)
 > Target File 26KB
 
 * User can control the speed of video
