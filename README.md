@@ -8,6 +8,7 @@ Why?
 ====
 * Inspired from twitter gif comment function
 * MP4 video is much smaller than Gif, nearlly 10 times smaller
+
 ![Source File](https://github.com/zjhiphop/videofy/raw/master/tmp/test.gif)
 > Source file 627KB
 
