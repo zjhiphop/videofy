@@ -12,7 +12,7 @@ Why?
 ![Source File](https://github.com/zjhiphop/videofy/raw/master/tmp/test.gif)
 > Source file 627KB
 
-<video src="https://github.com/zjhiphop/videofy/raw/master/tmp/test.gif" controls autoplay><a href="https://github.com/zjhiphop/videofy/raw/master/tmp/test.gif">Source Video</a></video> 
+<video src="https://github.com/zjhiphop/videofy/raw/master/tmp/test-mp4.mp4" controls autoplay><a href="https://github.com/zjhiphop/videofy/raw/master/tmp/test-mp4.mp4">Source Video</a></video> 
 > Target File 26KB
 
 * User can control the speed of video
