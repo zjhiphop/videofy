@@ -1,0 +1,32 @@
+{
+    "name": "videofy",
+    "version": "0.0.1",
+    "repository": "git://github.com/zjhiphop/videofy",
+    "description": "Convert animated gif to video",
+    "keywords": [
+        "gif",
+        "video",
+        "ffmpeg",
+        "convert",
+        "imagemagic"
+    ],
+    "dependencies": {
+        "shell-escape": "0.0.0",
+        "debug": "*",
+        "uid2": "0.0.3",
+        "mkdirp": "~0.3.5",
+        "commander": "~2.0.0"
+    },
+    "bin": {
+        "videofy": "./bin/videofy"
+    },
+    "files": [
+        "index.js",
+        "bin/"
+    ],
+    "scripts": {
+        "shelltest": "DEBUG=videofy ./bin/videofy tmp/test.gif tmp/test-cmd.mp4",
+        "test": "DEBUG=videofy node test"
+    },
+    "license": "MIT"
+}

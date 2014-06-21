@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+
+'use strict';
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander');
+var videofy = require('../index');
+var pkg = require('../package');
+var fs = require('fs');
+
+// options
+
+program
+    .version(pkg.version)
+    .usage('[options] infile outfile')
+    .option('-r, --rate [rate]', 'frame rate [10]')
+    .option('-c:v, --codec [codec]', 'video codec format type [libx264]')
+    .parse(process.argv);
+
+if (program.args.length < 2) {
+    program.help();
+}
+
+var src = program.args.shift();
+var dst = program.args.shift();
+
+var opts = {
+    rate: program.rate,
+    codec: program.codec
+};
+
+videofy(src, dst, opts, function(err) {
+    if (err) {
+        throw err;
+    }
+
+    var videoStat = fs.statSync(src);
+    var gifStat = fs.statSync(dst);
+
+    console.log('Gif Size: %s kb', gifStat.size / 1000 | 0);
+    console.log('Video Size: %s kb', videoStat.size / 1000 | 0);
+
+    console.log('Done.');
+});
