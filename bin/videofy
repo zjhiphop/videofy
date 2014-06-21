@@ -37,8 +37,8 @@ videofy(src, dst, opts, function(err) {
         throw err;
     }
 
-    var videoStat = fs.statSync(src);
-    var gifStat = fs.statSync(dst);
+    var videoStat = fs.statSync(dst);
+    var gifStat = fs.statSync(src);
 
     console.log('Gif Size: %s kb', gifStat.size / 1000 | 0);
     console.log('Video Size: %s kb', videoStat.size / 1000 | 0);
